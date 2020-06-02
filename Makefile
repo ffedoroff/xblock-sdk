@@ -95,6 +95,6 @@ travis_docker_auth:
 travis_docker_tag: docker_build
 	docker tag "openedx/xblock-sdk:latest" "openedx/xblock-sdk:$$TRAVIS_COMMIT"
 
-travis_docker_push: travis_docker_auth travis_docker_tag ## push to docker hub
+travis_docker_push: | travis_docker_auth travis_docker_tag ## push to docker hub
 	docker push "openedx/xblock-sdk:latest"
 	docker push "openedx/xblock-sdk:$$TRAVIS_COMMIT"

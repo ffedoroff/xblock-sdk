@@ -33,9 +33,7 @@ after_success:
 - codecov
 deploy:
   provider: script
-  script: 
-    - make travis_docker_auth
-    - make travis_docker_push
+  script: make travis_docker_push
   on:
     python: 3.5
     condition: '$TOXENV=django22'
