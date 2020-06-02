@@ -21,6 +21,7 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x -o /tmp/nodejs-setup
 RUN /bin/bash /tmp/nodejs-setup
 RUN rm /tmp/nodejs-setup
 RUN apt-get -y install nodejs
+RUN echo $PYTHONPATH
 
 RUN make install
 EXPOSE 8000
