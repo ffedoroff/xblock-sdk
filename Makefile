@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 .PHONY: clean help quality requirements selfcheck test test-all upgrade validate
-
+.PHONY: docker_build travis_docker_auth travis_docker_tag travis_docker_push
 .DEFAULT_GOAL := help
 
 define BROWSER_PYSCRIPT
