@@ -68,7 +68,7 @@ requirements: ## install development environment requirements
 	pip install -qr requirements/dev.txt --exists-action w
 	pip install -qr requirements/local.txt --exists-action w
 
-install: requirements $(SQLITE_DB)
+install: requirements
 
 test: clean ## run tests in the current virtualenv
 	pip install -qr requirements/local.txt --exists-action w ## Install sample xblocks
