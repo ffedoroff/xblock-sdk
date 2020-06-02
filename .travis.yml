@@ -36,5 +36,5 @@ deploy:
   script: make travis_docker_push
   on:
     python: 3.5
-    condition: '$TOX_ENV = django22'
+    condition: '$TOXENV=django22'
     branch: msingh/make_upgrade
